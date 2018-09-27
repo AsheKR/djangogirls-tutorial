@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+# djangogirls-tutorial이 루트라고 생각하기때문에 생기는 오류
+from blog import views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.post_list, name='post_list')
 ]

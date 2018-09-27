@@ -109,6 +109,11 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
+# 실제로 출력했을 때 서울의 시간을 출력하지 못한다. 출력 시 UTC+TIME_ZONE 설정을 해주어야한다.
+# admin 에서 글을 생성했을 때는 올바른 시간을 표시해준다. ADMIN 페이지는 알아서 위 설정이 적용된다.
+
+# TIME_ZONE = 'Asia/Seoul'
+
 USE_I18N = True
 
 USE_L10N = True
